@@ -1,76 +1,59 @@
 /* sparga framework */
-@font-face {
-  font-family: 'MyWebFont';
-  src: url('../fonts/webfont.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
 ::-moz-selection { 
     color: #fff;
-    background: #1E275A;
+    background: #0e5d59;
 }
-
 ::selection {
     color: #fff;
-    background: #1E275A;
+    background: #0e5d59;
 }
-
 input:focus, textarea:focus {
 	background-color: #f5f5f5;
 }
-
 a {
     /* color: #F89422; */
 	transition: all 0.5s ease-in-out 0s;
 }
-
 a:focus {
     outline: none;
 }
-
 a:link, a:visited {
 	text-decoration: none;
 } 
-
 body {
 	/* background-color: #e8e8e8; */
-    /* font-family: "Montserrat",sans-serif; */
+    font-family: 'Lato', sans-serif;
+	font-weight: 300;
     /* font-size: 62.5%; */
 	margin: 0;
 	padding: 0;
     /* overflow-x: hidden; */
 	/* color: #ccc; */
 }
-
 html, body {
     /* overflow-x: hidden!important; */
 }
-
 h1+p {
 	margin-top: 0;
 }
-
 .header {
     background: #000 none repeat scroll 0 0;
 }
-
-ul {
+ul.site {
 	list-style-image: url("../images/list-icons/list-icon.png");
 	/* list-style-type: none; */
 	padding-left: 20px;
 	margin-left: 0;
 }
-
+ul {
+	list-style-type: none;
+}
 .wraper {
 	/* font-size: 1.6em; */
 	/* padding: 2em; */
 	/* margin: 0 auto; */
 }
-
 * {
 	/* margin: 0; */
 	/* padding: 0; */
@@ -78,16 +61,121 @@ ul {
 	/* -moz-box-sizing: border-box; */
 	/* box-sizing: border-box; */
 }
-
 .container {
-    /* width: 1600px; */
-	/* max-width: 100%; */
+    width: 1200px;
+	max-width: 100%;
 }
-
 /* end of sparga framework */
 
-
-
+.design-item-content {
+	display: flex;
+    display: -webkit-flex;
+    display: -moz-box;
+}
+.horisontal-line-container {
+    left: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+.main-menu {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.main-menu .logo {
+    margin: 15px;
+}
+.menu-button > span {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    width: 100%;
+}
+.menu-button {
+    background: #ea8552 none repeat scroll 0 0;
+    float: right;
+    height: 100px;
+    padding: 37px 30px;
+    width: 100px;
+}
+.main-header {
+    background: rgba(0, 0, 0, 0) url("../images/schemes-bg.jpg") repeat scroll 0 0;
+    height: 700px;
+    width: 100%;
+}
+.big-animation-logo-container {
+    left: -80px;
+    max-width: 33%;
+    position: absolute;
+    top: -770px;
+    width: 700px;
+}
+.big-animation-logo-container svg {
+    opacity: 0.2;
+	width: 983px;
+}
+.index-header-content {
+    left: 0;
+    padding: 0 100px;
+    position: absolute;
+    top: 50%;
+}
+.main-header {
+	position: relative;
+}
+.index-header-content h1 {
+    color: #0e5d59;
+    font-size: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+.index-header-content p {
+    color: #0e5d59;
+    font-size: 22px;
+    font-weight: 300;
+}
+.design-item-content {
+    padding: 0;
+}
+.design-item-content > h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+.design-item-content > p {
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer-menu-items > li {
+    display: inline-block;
+    margin-right: 60px;
+}
+.footer-menu-items a {
+    color: #282828;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-menu-items {
+    padding-left: 0;
+}
+.made-by-container {
+    text-align: right;
+}
+.footer-triangle {
+    border-color: transparent #0e5d59 #0e5d59 transparent;
+    border-style: solid;
+    border-width: 360px;
+    bottom: 0;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+}
+.main-footer {
+	position: relative;
+}
 
 
 
